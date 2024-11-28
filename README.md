@@ -3,5 +3,5 @@
 Built with Next.js and Tailwind, using a layout provided by Frontend Mentor.
 
 Link to demo app:
-[`Netlify Link`]([https://invoicely-app.netlify.app/)
+[`Netlify Link`](https://invoicely-app.netlify.app/)
 [`Frontendmentor Link`](https://www.frontendmentor.io/solutions/planets-fact-site---nextjs-and-tailwind-css-Jay5Dvv8q2)
