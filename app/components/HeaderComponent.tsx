@@ -3,7 +3,7 @@ import { HeaderComponentProps } from "../interface/Planet";
 
 export const HeaderComponent: React.FC<HeaderComponentProps> = ({ data = [], onDataChange }) => {
     const [currentPlanet, setCurrentPlanet] = useState('Mercury');
-    const handleClick = (e:any, name:string) => {
+    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, name:string) => {
         e.preventDefault();
         onDataChange(name);
         setCurrentPlanet(name)

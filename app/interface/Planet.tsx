@@ -1,7 +1,7 @@
 
 export interface Planet {
     name: string;
-    [key: string]: any;
+    [key: string]: string | number | undefined;
   }
   
 export interface HeaderComponentProps {
@@ -11,5 +11,5 @@ export interface HeaderComponentProps {
 
 export interface PlanetComponentProps {
     data?: Planet[]; 
-    planet: any;
+    planet: Planet;
  }
