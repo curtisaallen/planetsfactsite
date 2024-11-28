@@ -25,4 +25,14 @@ export interface Planet {
    };
    [key: string]: string | number | undefined | Record<string, unknown>;
  }
+
+ export interface HeaderComponentProps {
+   data?: Planet[]; 
+   onDataChange: (value: string) => void;
+ }
+ 
+ export interface PlanetComponentProps {
+    data?: Planet[]; 
+    planet: Planet;
+ }
  
