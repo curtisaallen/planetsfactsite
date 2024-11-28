@@ -13,10 +13,11 @@ export default function Home() {
   const handlePlanet = (name:string) => {
     return planetsData.find(planet => planet.name === name)
   }
+  const selectedPlanet = handlePlanet(planet);
   return (
     <>
     <HeaderComponent data={planetsData as Planet[]} onDataChange={handleDataFromChild} />
-    <PlanetComponent planet={handlePlanet(planet)} />
+    {selectedPlanet && <PlanetComponent planet={selectedPlanet} />}
     </>
   );
 }
