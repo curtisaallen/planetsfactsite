@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #070722;
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +21,171 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  font-family: 'Antonio', sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: -1.05px;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: .9375rem;
+  line-height: 1.56rem;
+  letter-spacing: 1.36px;
+  position: relative;
+  transition: all .3s ease-in;
+  position: relative;
+}
+
+header {
+  border-bottom: 1px solid hsla(0, 0%, 100%, .2);
+}
+
+
+.planet_mercury:before {
+  background-color: #12aad9;
+  display: initial;
+  bottom: auto;
+  top: -44px;
+  content: "";
+  height: 4px;
+  width: 100%;
+  left: auto;
+  position: absolute;
+}
+
+.planet_main {
+  margin: auto;
+  max-width: 80%;
+}
+
+.active-Mercury:before {
+  background-color: #12aad9;
+  display: initial;
+  bottom: auto;
+  top: -44px;
+  content: "";
+  height: 4px;
+  width: 100%;
+  left: auto;
+  position: absolute;
+}
+
+.active-Venus:before {
+  background-color: #EDA449;
+  display: initial;
+  bottom: auto;
+  top: -44px;
+  content: "";
+  height: 4px;
+  width: 100%;
+  left: auto;
+  position: absolute;
+}
+
+.active-Earth:before {
+  background-color: #4ecdf9;
+  display: initial;
+  bottom: auto;
+  top: -44px;
+  content: "";
+  height: 4px;
+  width: 100%;
+  left: auto;
+  position: absolute;
+}
+
+.active-Mars:before {
+  background-color: #d14e33;
+  display: initial;
+  bottom: auto;
+  top: -44px;
+  content: "";
+  height: 4px;
+  width: 100%;
+  left: auto;
+  position: absolute;
+}
+
+.active-Jupiter:before {
+  background-color: #d93b36;
+  display: initial;
+  bottom: auto;
+  top: -44px;
+  content: "";
+  height: 4px;
+  width: 100%;
+  left: auto;
+  position: absolute;
+}
+
+.active-Saturn:before {
+  background-color: #cb5020;
+  display: initial;
+  bottom: auto;
+  top: -44px;
+  content: "";
+  height: 4px;
+  width: 100%;
+  left: auto;
+  position: absolute;
+}
+
+.active-Uranus:before {
+  background-color: #1ec2a4;
+  display: initial;
+  bottom: auto;
+  top: -44px;
+  content: "";
+  height: 4px;
+  width: 100%;
+  left: auto;
+  position: absolute;
+}
+
+.active-Neptune:before {
+  background-color: #2d68f0;
+  display: initial;
+  bottom: auto;
+  top: -44px;
+  content: "";
+  height: 4px;
+  width: 100%;
+  left: auto;
+  position: absolute;
+}
+
+
+
+@media (max-width: 1016px) {
+  .active-Mercury:before {
+    display: none;
+  }
+  .active-Venus:before {
+    display: none;
+  }
+  .active-Earth:before {
+    display: none;
+  }
+  .active-Mars:before {
+    display: none;
+  }
+  .active-Jupiter:before {
+    display: none;
+  }
+  .active-Saturn:before {
+    display: none;
+  }
+  .active-Uranus:before {
+    display: none;
+  }
+  .active-Neptune:before {
+    display: none;
+  }
 }
